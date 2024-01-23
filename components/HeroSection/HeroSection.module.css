@@ -1,0 +1,75 @@
+.main-container {
+  background: #fffff8;
+}
+
+.heading {
+  font-family: 'Druk Trial', sans-serif;
+  font-weight: bold;
+}
+
+.body {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+.social {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  @media (max-width: em(750px)) {
+    justify-content: center !important;
+  }
+}
+.title {
+  font-size: 380px;
+  font-weight: 900;
+  line-height: 456px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #e50b0b;
+  text-transform: uppercase;
+
+  /* News Ticker Animation */
+  overflow: visible;
+  white-space: normal;
+  animation: none;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 750px) {
+  .title {
+    font-size: 380px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    /* Enable the ticker animation only on mobile screens */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: ticker 15s linear infinite;
+  }
+}
+
+.Calimero {
+  max-width: 580px;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center perfectly */
+}
+
+@media (max-width: 750px) {
+  .Calimero {
+    max-width: 375px;
+  }
+}

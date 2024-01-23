@@ -1,0 +1,83 @@
+.heading {
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 102px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #161c23;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  @media (max-width: em(1200px)) {
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 64px;
+    letter-spacing: 0px;
+    text-align: center;
+    max-width: 327px;
+    margin: auto;
+  }
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: em(1300px)) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: em(776px)) {
+    flex-wrap: wrap;
+  }
+}
+.title {
+  max-width: 538px;
+  width: 100%;
+  margin: auto;
+}
+.surname {
+  font-family: 'Druk Trial', sans-serif;
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #161c23;
+}
+.surnameDec {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #878f94;
+}
+.teamBox {
+  max-width: 270px;
+  height: auto;
+  @media (max-width: em(776px)) {
+    max-width: 165px;
+    height: auto;
+    width: 100%;
+  }
+}
+.teamBox2 {
+  max-width: 270px;
+  height: auto;
+  @media (max-width: em(776px)) {
+    max-width: 165px;
+    height: auto;
+    width: 100%;
+    margin-top: 22px;
+  }
+}
+.avatar {
+  max-width: 270px;
+  height: auto;
+  @media (max-width: em(776px)) {
+    max-width: 165px;
+    height: auto;
+    width: 100%;
+  }
+}

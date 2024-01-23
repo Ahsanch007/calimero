@@ -1,0 +1,108 @@
+.list {
+  border: 1px solid #e50b0b;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+
+  @media (max-width: em(1200px)) {
+    display: none;
+  }
+}
+.icon {
+  max-width: 152px;
+  height: 52px;
+  @media (max-width: em(750px)) {
+    max-width: 120px;
+    height: 41px;
+  }
+}
+.list ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.list ul li {
+  padding: 2px 24px 4px 24px;
+  font-size: 15px;
+  color: #e50b0b;
+  font-weight: 700;
+  cursor: pointer;
+}
+.menu {
+  display: none;
+}
+.list ul li:hover,
+.list ul li:active,
+.list ul li:focus {
+  color: white;
+  background: #e50b0b;
+  border-radius: 50px;
+  outline: none; /* to remove the default focus outline, if desired */
+}
+.btn {
+  background: #e50b0b;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: 0.3s;
+  @media (max-width: em(750px)) {
+    height: 41px;
+  }
+}
+.btn:hover {
+  background-color: white;
+  color: #e50b0b;
+  border: 1px solid #e50b0b;
+}
+.mic {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: em(750px)) {
+  .volume {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    cursor: pointer;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.drawer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnDrawer {
+  background: #ffffff;
+  color: #e50b0b;
+}
+.menuList {
+  list-style: none;
+  padding: 0px;
+}
+.menuList li {
+  padding: 10px;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.socialIcons {
+  display: flex;
+  max-width: 184px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+}

@@ -1,0 +1,37 @@
+.m-1b7284a3:not([data-with-border]) {
+  background-color: #e50b0b !important;
+}
+[data-active='true'] {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  @media (max-width: em(776px)) {
+    border-radius: 1px !important;
+    width: 100%;
+  }
+}
+[data-active='true'] .detailss {
+  color: black;
+}
+
+[data-active='true'] .m-7485cace {
+  @media (max-width: em(750px)) {
+    padding: 0px !important;
+  }
+}
+
+.m-df3ffa0f {
+  max-width: 390px;
+  width: 100%;
+  margin: auto;
+}
+.myBox {
+  position: absolute;
+  bottom: -170px;
+}
+
+@media (max-width: 750px) {
+  .myBox {
+    bottom: -100px;
+  }
+}

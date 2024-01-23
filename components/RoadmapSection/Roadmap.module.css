@@ -1,0 +1,359 @@
+.bgimg {
+  padding-top: 12rem;
+  background-image: url('/assets/image/Lovely-Calimero 1.svg'), url('/assets/image/m66heZGg 1.svg');
+  background-position:
+    top right,
+    bottom left;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #eaeaea;
+  /* You can add more background properties if needed */
+  @media (max-width: em(1024px)) {
+    background-image: none !important;
+  }
+}
+/* YourComponent.module.css */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotatingImage {
+  margin-left: 10px;
+  font-size: 25px;
+  @media (max-width: em(1024px)) {
+    margin-left: 0px;
+  }
+  animation: rotate 2s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+.roadMap {
+  max-width: 940px;
+  margin: auto;
+}
+
+.icon {
+  text-align: center;
+}
+
+.title {
+  font-size: 250px;
+  font-weight: 900;
+  line-height: 213px;
+  letter-spacing: 0px;
+  color: #e50b0b;
+  text-transform: uppercase;
+
+  @media (max-width: em(1024px)) {
+    font-size: 105px;
+    line-height: 89.25px;
+    overflow: hidden;
+  }
+}
+
+.des {
+  max-width: 731px;
+  margin: auto;
+  margin-top: 20px;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #e50b0b;
+
+  @media (max-width: 750px) {
+    font-size: 17px;
+    line-height: 25.5px;
+    text-align: center;
+  }
+}
+
+.title2 {
+  font-family: 'Druk Trial', sans-serif;
+
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 1px;
+  color: #161c23;
+  text-transform: uppercase;
+
+  @media (max-width: em(1024px)) {
+    font-size: 60px;
+    line-height: 51px;
+  }
+}
+
+.card {
+  border: 2px solid #fff;
+  border-radius: 15px;
+  padding: 20px;
+
+  transition: transform 1s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.card:hover,
+.openCard {
+  border: 2px solid #e50b0b;
+  transition: 0.3s;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.none {
+  max-height: 0px; /* Adjust this value based on your content */
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 0px;
+  height: 0;
+}
+
+.content {
+  opacity: 1;
+  font-weight: 300;
+  color: #e50b0b;
+  transition: 0.5s;
+  max-height: 1000px; /* Adjust this value based on your content */
+  margin-top: 10px;
+  height: auto;
+}
+.content2 {
+  opacity: 1;
+  font-weight: 300;
+  color: #ffff;
+  transition: 0.5s;
+  max-height: 1000px; /* Adjust this value based on your content */
+  margin-top: 10px;
+  height: auto;
+}
+.card3 {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #e50b0b;
+}
+
+.card2 {
+  border-radius: 15px;
+  padding: 20px;
+  background: #e50b0b;
+  transition: transform 1s ease;
+}
+
+.launch {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #e50b0b;
+
+  @media (max-width: em(776px)) {
+    font-size: 19px;
+    line-height: 28.5px;
+  }
+}
+.iconMain {
+  max-width: 91.88px;
+  height: auto;
+  width: 100%;
+  @media (max-width: em(776px)) {
+    max-width: 41px;
+  }
+}
+
+.Join {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: white;
+
+  @media (max-width: em(776px)) {
+    font-size: 19px;
+    line-height: 28.5px;
+  }
+}
+
+.btn {
+  border-radius: 40px;
+  background: #e50b0b;
+  height: 50px;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  transition: 0.3s;
+  border: 2px solid #e50b0b;
+
+  @media (max-width: em(776px)) {
+    display: none;
+  }
+}
+.btn:hover {
+  background-color: white;
+  color: #e50b0b; /* Change button text color on hover */
+  border: 2px solid #e50b0b;
+}
+
+.btn:hover .reactIcon {
+  color: #e50b0b; /* Change icon color on button hover */
+}
+
+.reactIcon {
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.btn,
+.reactIcon {
+  transition: color 0.3s; /* Add transition for a smooth color change */
+}
+.btn2 {
+  border-radius: 40px;
+  background: #e50b0b;
+  height: 50px;
+  border: 2px solid #fff;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  transition: 0.3s;
+  @media (max-width: em(776px)) {
+    display: none;
+  }
+}
+.btn2:hover {
+  background-color: white;
+  color: #e50b0b;
+}
+.btn:hover .rotatingImage {
+  color: #e50b0b;
+}
+.btn2,
+.rotatingImage {
+  transition: color 0.3s; /* Add transition for a smooth color change */
+}
+.btnMob2 {
+  display: none;
+
+  @media (max-width: em(776px)) {
+    border-radius: 28px;
+    background: #e50b0b;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 2px solid #fff;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.btn3 {
+  border-radius: 40px;
+  color: #e50b0b;
+  background: transparent;
+  height: 50px;
+  border: 2px solid #e50b0b;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  transition: 0.3s;
+
+  @media (max-width: em(776px)) {
+    display: none;
+  }
+}
+.btn3:hover,
+.btn3:active,
+.btn3Mob:hover {
+  background-color: #e50b0b;
+  color: white;
+  border: 2px solid#e50b0b;
+}
+
+.rotation {
+  background: #e50b0b;
+  border-radius: 25px;
+  padding: 10px;
+  max-width: 285px;
+  width: 100%;
+  margin: auto;
+  transform: rotate(-2deg);
+}
+
+.desci {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: white;
+}
+
+.btnMob {
+  display: none;
+
+  @media (max-width: em(776px)) {
+    border-radius: 28px;
+    background: #e50b0b;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+  }
+}
+
+.btn3Mob {
+  display: none;
+
+  @media (max-width: em(776px)) {
+    border-radius: 28px;
+    color: #e50b0b;
+    background: transparent;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    border: 2px solid #e50b0b;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: center;
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,161 @@
+.left {
+  max-width: 570px;
+  width: 100%;
+}
+.right {
+  max-width: 480px;
+  width: 100%;
+  @media (max-width: em(776px)) {
+    text-align: center;
+  }
+}
+.faq {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: em(1040px)) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.chevron {
+  &[data-rotate] {
+    transform: rotate(45deg);
+  }
+}
+
+.title {
+  font-family: 'Druk Trial', sans-serif;
+
+  font-size: 250px;
+  font-weight: 900;
+  line-height: 213px;
+  letter-spacing: 0px;
+  color: #fff;
+  margin-left: 5rem;
+  @media (max-width: em(776px)) {
+    font-size: 220px;
+    line-height: 187px;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+.answer {
+  max-width: 450px;
+  margin: auto;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #161c23;
+  @media (max-width: em(600px)) {
+    max-width: 343px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25.5px;
+  }
+}
+.question {
+  display: flex;
+  justify-content: end;
+  border-bottom: 2px solid #252b31;
+  margin-top: 10px;
+}
+.open {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  min-height: 193px;
+}
+.desc {
+  margin-bottom: 10px;
+
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.openDes {
+  margin-bottom: 10px;
+
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.detail {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  @media (max-width: em(776px)) {
+    font-size: 19px;
+    line-height: 28.5px;
+  }
+}
+.openDetail {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #161c23;
+  @media (max-width: em(776px)) {
+    font-size: 19px;
+    line-height: 28.5px;
+  }
+}
+.sign {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  @media (max-width: em(776px)) {
+    font-size: 26px;
+    line-height: 28.5px;
+  }
+}
+.openSign {
+  margin-right: 10px;
+
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #161c23;
+
+  cursor: pointer;
+  @media (max-width: em(776px)) {
+    font-size: 26px;
+    line-height: 28.5px;
+  }
+}
+.img {
+  max-width: 480px;
+  height: auto;
+  @media (max-width: em(776px)) {
+    max-width: 212px;
+  }
+}
+.item {
+  border-bottom: 2px solid #252b31;
+}
+.openedItem {
+  background-color: #fff;
+}
